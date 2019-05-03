@@ -2,25 +2,25 @@
 // Display and align center;
 .displayFlex{
     display: flex;
-    justify-content: center;
+    justify-content: @justify;
     padding: @padingTiny;
     margin: @marginTiny;
 }
 .navPad{
     padding: @padingTiny;
-    margin: @marginNormal;
+    margin: @marginSmall;
     text-decoration: none;
     font-size: @larger;
 }
 
 
-// paramatric mixin
+// paramatric mixin for button
 
-.button{
+.button(@borderRadius){
     background-color:#022283;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
+	-moz-border-radius:@borderRadius;
+	-webkit-border-radius:@borderRadius;
+	border-radius:@borderRadius;
 	border:1px solid #ffffff;
 	display:inline-block;
 	cursor:pointer;
@@ -30,32 +30,4 @@
 	font-weight:bold;
 	padding:9px 27px;
 	text-decoration:none;
-
-    button:hover{
-      background-color: white;
-    }
-}
-.button{
-    button {
-	background-color:#022283;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:9px 27px;
-	text-decoration:none;
-}
-    button:hover {
-	background-color:#ffffff;
-    }
-    button:active {
-	position:relative;
-	top:1px;
-    }
 }

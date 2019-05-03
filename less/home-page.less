@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+
   .intro {
     h2 {
       padding: 0 30px 10px;
@@ -27,6 +28,19 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    @media @phone {
+      .blast {
+        width: 100%;
+        padding: @padingTiny;
+        margin: @marginSmall;
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -62,11 +76,16 @@
 
       .btn {
         button {
-          .button;
+          .button(6px);
         }
         button:hover {
           background-color: #ffffff;
           color: @btn-bg-color;
+        }
+        @media @phone{
+          button{
+            width: 100%;
+          }
         }
       }
     }
@@ -79,6 +98,15 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+    @media @phone {
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: @paddingSmall;
+      margin: @marginSmall;
+      .walk-text{
+        width: 100%;
       }
     }
   }
