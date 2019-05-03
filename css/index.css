@@ -4,6 +4,12 @@
   padding: 0.5rem;
   margin: 0.5rem;
 }
+.navPad {
+  padding: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,12 +178,14 @@ p {
 .navigation {
   font-weight: bold;
   color: #23293B;
+  background-color: #F6F6F6;
 }
 .navigation .heading {
   display: flex;
   justify-content: center;
   padding: 0.5rem;
   margin: 0.5rem;
+  font-size: 4rem;
 }
 .navigation .navbar {
   display: flex;
@@ -187,6 +195,10 @@ p {
 }
 .navigation .navbar a {
   color: #23293B;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 footer {
   color: #22283B;
@@ -199,10 +211,16 @@ footer {
   align-items: center;
 }
 .home .intro h2 {
-  padding: 15px;
+  padding: 0 30px 10px;
 }
 .home .intro p {
-  padding: 0 15px;
+  padding: 0 30px;
+}
+.home .intro img {
+  margin: 2.5%;
+  border-radius: 20px;
+  height: 80%;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
