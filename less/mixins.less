@@ -1,1 +1,33 @@
-// Mixins Here
+// Mixins
+// Display and align center;
+.displayFlex{
+    display: flex;
+    justify-content: @justify;
+    padding: @padingTiny;
+    margin: @marginTiny;
+}
+.navPad{
+    padding: @padingTiny;
+    margin: @marginSmall;
+    text-decoration: none;
+    font-size: @larger;
+}
+
+
+// paramatric mixin for button
+
+.button(@borderRadius){
+    background-color:#022283;
+	-moz-border-radius:@borderRadius;
+	-webkit-border-radius:@borderRadius;
+	border-radius:@borderRadius;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 27px;
+	text-decoration:none;
+}
